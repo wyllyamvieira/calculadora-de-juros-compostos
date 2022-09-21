@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="shortcut icon" href="./assets/wyllyam-ico.ico" type="image/x-icon">
+   <link rel="stylesheet" href="./css/main.css">
+   <script src="./main.js" defer></script>
+   <title>Trabalho de matematica - Wyllyam Vieira</title>
+</head>
+<body>
+   <header>
+      <div class="container">
+         <a href="./index.html"><img src="./assets/imgs/logo-wyllyam.png" alt="brand"></a>
+         <nav>
+            <i id="menu" class='bx bx-menu'></i>
+            <ul id="nav-links">
+               <li><a href="https://wyllyamvieira.github.io/site/">Sobre mim</a></li>
+               <li><a href="https://wyllyamvieira.github.io/site/">Projetos</a></li>
+               <li><a href="https://wyllyamvieira.github.io/site/">Minhas Habilidades</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main>
+      <section class="intro">
+         <div class="container">
+            <div class="group1">
+               <h1>Olá, eu sou Wyllyam e sejam bem vindos ao meu trabalho de matematica </h1>
+               <div class="type-animation">
+                  <p id="typed"></p>
+               </div>
+               <div id="typed-strings"><p>Coordenado pela Profesora Elisangela 📚</p></div>
+               <a href="#calculadora" target="_blank" class="cv"><button class="cv-btn">Ir para Calculadora</button></a>
+            </div>
+            <img src="./assets/imgs/Mathematics.svg" alt="dev-illustration">
+         </div>
+      </section>
+      <section class="about" id="sobre">
+         <div class="container">
+            <h2>Sobre o Projeto</h2>
+            <p>Olá, me chamo Wyllyam Gustavo Vieira, e estou essa pagina de site foi feita para apresentar o projeto da calculadora na feira de matematica da Escola Militar Tiradentes uitlizamos essa ferramenta paracalculos de juros compostos e descobrir um valor de seus imvestimentos ganhos em meio a esses juros, esté trabalho foi desenvolvido por Wyllyam Gustavo Vieira ,Rafael Lucas Trubian, João Pedro,Michael Schumacher.</p>
+         </div>
+      </section>
+      <section class="servicos" id="calculadora">
+         <div class="container">
+            <h2>Calculadora</h2>
+                    <hr>
+                    <form onsubmit="return false">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="control-label">Valor Inicial:</label>
+                                <input class="montante form-control" type="number" placeholder="Valor inicial">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="control-label">Aporte Mensal:</label>
+                                <input class="aporte form-control" type="number" placeholder="Caso Não Houver,  Manter vazio">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <legend>Taxa</legend>
+                            <div class="col-md-6">
+                                <label class="control-label">Mensal (padrão)</label>
+                                <input class="taxa form-control" type="number" placeholder="Taxa de juros">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="control-label">Ou taxa anual</label>
+                                <input class="taxaAno form-control" type="number" placeholder="Caso Não Houver,  Manter vazio">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <legend>Prazo</legend>
+                            <div class="col-md-4">
+                                <label class="control-label">Em meses (padrão)</label>
+                                <input class="prazo form-control" type="number" placeholder="Meses">
+                            </div>
+                            <div class="col-md-4">
+                                <label>Ou em anos</label>
+                                <input class="prazoAno dataput form-control" type="number" placeholder="Caso Não Houver,  Manter vazio">
+                            </div>
+                            <div class="col-md-4">
+                                <label>Ou até data específica</label>
+                                <input class="ateVencer dataput form-control" type="date" placeholder="Data do Vencimento">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <input type="submit" class="simulaUm" style="  padding: 10px 20px;
+                                border: none;
+                                font-size: 17px;
+                                color: #fff;
+                                border-radius: 7px;
+                                letter-spacing: 4px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                transition: 0.5s;
+                                transition-property: box-shadow;
+                                background: rgb(255, 0, 0);
+                                box-shadow: 0 0 25px rgb(255, 0, 0);
+                                " value="Calcular">
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="row resultados">
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>Aplicação inicial</th>
+                                        <th>Soma Aplicações</th>
+                                        <th>Juros totais</th>
+                                        <th>Acumulado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>R$ <span class="apIn">.</span></td>
+                                        <td>R$ <span class="apOut">.</span></td>
+                                        <td>R$ <span class="apJu">.</span></td>
+                                        <td>R$ <span class="apTot">.</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <section>
+                            <label class="control-label">Dados parciais e acumulados:</label>
+                            <p></p>
+                            <div id="printfinal" class="table-responsive">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th>Mês</th>
+                                            <th>Aportes</th>
+                                            <th>Juros no mês</th>
+                                            <th>Juros total</th>
+                                            <th>Acumulado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="calculadora.js"></script>
+
+            </div>
+         </div>
+      </section>
+      <section class="skills" id="skills">
+         <div class="container">
+            <h2>Tecnologias Utilizadas para o desenvolvimento da ferramenta.</h2>
+            <div class="cards-container">
+               <div class="skill-card">
+                  <i class='bx bxl-html5'></i>
+                  <h2>HTML</h2>
+               </div>
+               <div class="skill-card">
+                  <i class='bx bxl-css3'></i>
+                  <h2>CSS</h2>
+               </div>
+               <div class="skill-card">
+                  <i class='bx bxl-javascript'></i>
+                  <h2>JavaScript</h2>
+               </div>
+               <div class="skill-card">
+                  <i class='bx bxl-bootstrap'></i>
+                  <h2 >BootStrap</h2>
+               </div> 
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer>
+      <p>Orgulhosamente feito por <span>Wyllyam Vieira</span></p>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script>
+      var typed = new Typed('#typed', {
+         stringsElement: '#typed-strings', typeSpeed: 30
+      })
+      const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+        ScrollReveal().reveal('.proj-card', { delay: 300, opacity: .2, origin: 'bottom' });
+        ScrollReveal().reveal('.ser-card', { delay: 300, opacity: .2, origin: 'bottom' });
+        ScrollReveal().reveal('.skill-card', { delay: 300, opacity: .2, origin: 'bottom' });
+   </script>
+</body>
+</html>
