@@ -206,6 +206,7 @@ section.intro .container .group1 .cv-btn {
   background-color: #ff0000;
   padding: 15px 30px;
   border-radius: 5px;
+  color: #F9F9F9;
 }
 
 section.intro .container .group1 .contact-btn {
@@ -547,30 +548,13 @@ footer p span {
   }
 }
 
-table {
-  width: 100%;
-  background-color: #1d1d1d;
-  border-collapse: collapse;
-  border-width: 2px;
-  border-color: #ff0000;
-  border-style: solid;
-
-}
-
 table td, table th {
-  border-width: 2px;
-  border-color: #ff0000;
-  border-style: solid;
-  font-weight: bold;
-  padding: 3px;
-  border-radius: 20px; 
-  color: #ffffff;
-
-  
+  color: #F9F9F9;
 }
 
 table thead {
   background-color: #fe0101;
+
 }
 
 label {
