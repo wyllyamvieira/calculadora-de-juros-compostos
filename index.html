@@ -29,7 +29,7 @@
       <section class="intro">
          <div class="container">
             <div class="group1">
-               <h1>Olá, eu sou Wyllyam e sejam bem vindos ao meu trabalho de matematica </h1>
+               <h1>Olá, eu sou Wyllyam e sejam bem vindos ao meu trabalho de matematica! </h1>
                <div class="type-animation">
                   <p id="typed"></p>
                </div>
@@ -42,7 +42,11 @@
       <section class="about" id="sobre">
          <div class="container">
             <h2>Sobre o Projeto</h2>
-            <p>Olá, me chamo Wyllyam,essa aplicação foi feita para apresentar o projeto da calculadora na feira de matematica da Escola Militar Tiradentes em tangará da Serra - MT uitlizamos essa ferramenta para calculos de juros compostos e descobrir um valor de seus investimentos ganhos em meio a esses juros, esté trabalho foi desenvolvido por Wyllyam Gustavo Vieira, Rafael Lucas Trubian, João pedro Mendes da Silva, Michael Schumacher.</p>
+            <p>Olá, me chamo Wyllyam, essa aplicação foi feita para apresentar o projeto da calculadora na
+                feira de matemática da Escola Militar Tiradentes em tangará da Serra - MT utilizamos essa
+                ferramenta para cálculos de juros compostos e descobrir um valor de seus investimentos ganhos
+                em meio a esses juros, este trabalho foi desenvolvido por Wyllyam Gustavo Vieira, Rafael Lucas
+                Trubian, João Pedro Mendes da Silva, Michael Schumacher.</p>
          </div>
       </section>
       <section class="servicos" id="calculadora">
@@ -77,11 +81,11 @@
                             <legend>Prazo</legend>
                             <div class="col-md-4">
                                 <label class="control-label">Em meses (padrão)</label>
-                                <input class="prazo form-control" type="number"  step="0.01" placeholder="Meses">
+                                <input class="prazo form-control" type="number"  step="1" placeholder="Meses">
                             </div>
                             <div class="col-md-4">
                                 <label>Ou em anos</label>
-                                <input class="prazoAno dataput form-control" type="number"  step="0.01" placeholder="Caso Não Houver,  Manter vazio">
+                                <input class="prazoAno dataput form-control" type="number"  step="1" placeholder="Caso Não Houver,  Manter vazio">
                             </div>
                             <div class="col-md-4">
                                 <label>Ou até data específica</label>
@@ -91,7 +95,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <input type="submit" class="simulaUm" style="  padding: 10px 20px;
+                                <input type="submit" class="simulaUm" style=" padding: 10px 20px;
                                 border: none;
                                 font-size: 17px;
                                 color: #fff;
@@ -129,27 +133,29 @@
                                 </tbody>
                             </table>
                         </div>
-                        <section>
-                            <label class="control-label">Dados parciais e acumulados:</label>
-                            <p></p>
-                            <div id="printfinal" class="table-responsive">
-                                <table class="table table-borderless">
-                                    <thead>
-                                        <tr>
-                                            <th>Mês</th>
-                                            <th>Aportes</th>
-                                            <th>Juros no mês</th>
-                                            <th>Juros total</th>
-                                            <th>Acumulado</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                        </section>
-                    </div>
-                </section>
-            </div>
+                    </hr>
+                </div>    
+                <hr>
+                    <div id="printfinal" class="row resultados">
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>Mês</th>
+                                        <th>Aportes</th>
+                                        <th>Juros no mês</th>
+                                        <th>Juros total</th>
+                                        <th>Acumulado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </hr>
+                </div>     
+    </div>
             <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
             <script src="calculadora.js"></script>
 
@@ -185,19 +191,6 @@
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
    <script src="https://unpkg.com/scrollreveal"></script>
-   <script>
-      var typed = new Typed('#typed', {
-         stringsElement: '#typed-strings', typeSpeed: 30
-      })
-      const sr = ScrollReveal({
-            origin: 'top',
-            distance: '50px',
-            duration: 2000,
-            reset: true
-        });
-        ScrollReveal().reveal('.proj-card', { delay: 300, opacity: .2, origin: 'bottom' });
-        ScrollReveal().reveal('.ser-card', { delay: 300, opacity: .2, origin: 'bottom' });
-        ScrollReveal().reveal('.skill-card', { delay: 300, opacity: .2, origin: 'bottom' });
-   </script>
+
 </body>
 </html>
